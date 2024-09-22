@@ -77,6 +77,15 @@
     .categorias button:hover {
         background-color: #555;
     }
+    /*En inicio, tres categorias por fila*/
+    /*#productos {
+       /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Tres columnas para las categorías 
+        gap: 20px;*/
+        /* Espacio entre las categorías 
+        padding: 20px;
+    }*/
 
     .productos {
         padding: 20px;
@@ -116,6 +125,8 @@
         /* Color de fondo de los productos */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         /* Sombra */
+        /*Para ajustar el tamaño*/
+        width: 100%;
     }
 
     .productoinicio img {
@@ -181,7 +192,6 @@
         margin:0 20px; Espacio a los lados del carrusel
     }
 */
-
     .carousel img {
         max-height: 300px;
         /* Ajusta la altura máxima de las imágenes del carrusel */
@@ -190,3 +200,16 @@
         object-fit: cover;
         /* Mantiene la proporción de las imágenes */
     }
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #productos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    #productos {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
