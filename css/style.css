@@ -1,0 +1,192 @@
+    /* Estilos generales */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        flex-grow: 1;
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f3f3;
+    }
+
+    header {
+        background-color: #1e2125;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #4a90e2;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+    }
+
+    nav button {
+        padding: 10px;
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    nav button:hover {
+        background-color: #e0482a;
+    }
+
+    .categoria {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .categorias {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .categorias button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .categorias button:hover {
+        background-color: #555;
+    }
+
+    .productos {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /*Que los productos se alineen a la izquierda*/
+    }
+
+    .producto {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 270px;
+        /* Ajusta el ancho para que quepan 4 productos por fila */
+        margin: 10px;
+        /* especio entre productos*/
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .producto img {
+        width: 230px;
+        /*Ajustar tamaño estatico */
+        height: 180px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .productoinicio {
+        border: 1px solid #ccc;
+        /* Bordes de los productos */
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        /* Color de fondo de los productos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Sombra */
+    }
+
+    .productoinicio img {
+        width: 100px;
+        /*Ajustar tamaño estatico */
+        height: 80px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .producto h2 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .producto p {
+        color: #777;
+    }
+
+    .productoinicio p {
+        color: #777;
+    }
+
+    .producto-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 10px;
+        /* Espacio interno */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        background-color: #ffffff;
+        /* Color de fondo */
+    }
+
+    .producto button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .producto button:hover {
+        background-color: #218838;
+    }
+
+    footer {
+        background-color: #1e2125;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    /*
+.carousel-container {
+        margin:0 20px; Espacio a los lados del carrusel
+    }
+*/
+
+    .carousel img {
+        max-height: 300px;
+        /* Ajusta la altura máxima de las imágenes del carrusel */
+        width: 50%;
+        /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+        object-fit: cover;
+        /* Mantiene la proporción de las imágenes */
+    }

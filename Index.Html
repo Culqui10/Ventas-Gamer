@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow Games</title>
+    <!-- Agregado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Wow Games</h1>
+        <p>Los mejores productos gamers en un solo lugar</p>
+    </header>
+
+    <nav>
+        <input type="text" placeholder="Buscar productos...">
+        <button>Buscar</button>
+
+        <section class="categorias">
+            <button onclick="window.location.href='index.html'">Inicio</button>
+            <button onclick="cargarCategoria('Consolas')">Consolas</button>
+            <button onclick="cargarCategoria('Accesorios')">Accesorios</button>
+            <button onclick="cargarCategoria('Pcgaming')">PC Gaming</button>
+            <button onclick="cargarCategoria('Videojuegos')">Videojuegos</button>
+            <button onclick="cargarCategoria('Diademas')">Diademas</button>
+        </section>
+    </nav>
+
+    <!-- Carrusel -->
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-target="#carouselExampleIndicators" data-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-target="#carouselExampleIndicators" data-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/accesorios/Controlador DualSense (PS5).jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/consolas/Nintendo Switch OLED.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/accesorios/Funda protectora para Nintendo Switch.jpg" class="d-block w-100"
+                        alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="productos" id="productos">
+        <div class="categoria">
+            <h2>Consolas</h2>
+            <div class="producto-grid">
+                <div class="productoinicio">
+                    <img src="img/consolas/Atari VCS.jpg" alt="Atari VCS">
+                    <h3>Atari VCS</h3>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch Lite.png" alt="Nintendo Switch Lite">
+                    <h3>Nintendo Switch Lite</h3>
+                    <p>Precio: $2,300.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch OLED.jpg" alt="Nintendo Switch OLED">
+                    <h3>Nintendo Switch OLED</h3>
+                    <p>Precio: $1,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/PlayStation 4 Pro.png" alt="PlayStation 4 Pro">
+                    <h3>PlayStation 4 Pro</h3>
+                    <p>Precio: $1,200.000 COP</p>
+                </div>
+            </div>
+            <button onclick="cargarCategoria('Consolas')">Ver más</button>
+        </div>
+
+        <div class="categoria">
+            <h2>Accesorios</h2>
+            <div class="producto-grid">
+                <div class="productoinicio">
+                    <img src="img/accesorios/auricularess.jpg" alt="Auriculares">
+                    <h2>Auriculares Dispositivos </h2>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/accesorios/CargadorNintendo Switch.jpg" alt="Cargador Nintendo Switch">
+                    <h2>Cargador Nintendo Switch</h2>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/accesorios/Controlador DualSense (PS5).jpg" alt="Controlador DualSense (PS5)">
+                    <h2>Controlador DualSense (PS5)</h2>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/accesorios/Controlador Xbox Elite Series 2.jpg" alt="Controlador Xbox Elite Series">
+                    <h2>Controlador Xbox Elite Series</h2>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+            </div>
+            <button onclick="cargarCategoria('Accesorios')">Ver más</button>
+        </div>
+        <div class="categoria">
+            <h2>Pc Gaming</h2>
+            <div class="producto-grid">
+                <div class="productoinicio">
+                    <img src="img/consolas/Atari VCS.jpg" alt="Atari VCS">
+                    <h3>Atari VCS</h3>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch Lite.png" alt="Nintendo Switch Lite">
+                    <h3>Nintendo Switch Lite</h3>
+                    <p>Precio: $2,300.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch OLED.jpg" alt="Nintendo Switch OLED">
+                    <h3>Nintendo Switch OLED</h3>
+                    <p>Precio: $1,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/PlayStation 4 Pro.png" alt="PlayStation 4 Pro">
+                    <h3>PlayStation 4 Pro</h3>
+                    <p>Precio: $1,200.000 COP</p>
+                </div>
+            </div>
+            <button onclick="cargarCategoria('Pcgaming')">Ver más</button>
+        </div>
+        <div class="categoria">
+            <h2>Videojuegos</h2>
+            <div class="producto-grid">
+                <div class="productoinicio">
+                    <img src="img/consolas/Atari VCS.jpg" alt="Atari VCS">
+                    <h3>Atari VCS</h3>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch Lite.png" alt="Nintendo Switch Lite">
+                    <h3>Nintendo Switch Lite</h3>
+                    <p>Precio: $2,300.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch OLED.jpg" alt="Nintendo Switch OLED">
+                    <h3>Nintendo Switch OLED</h3>
+                    <p>Precio: $1,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/PlayStation 4 Pro.png" alt="PlayStation 4 Pro">
+                    <h3>PlayStation 4 Pro</h3>
+                    <p>Precio: $1,200.000 COP</p>
+                </div>
+            </div>
+            <button onclick="cargarCategoria('Videojuegos')">Ver más</button>
+        </div>
+        <div class="categoria">
+            <h2>Diademas</h2>
+            <div class="producto-grid">
+                <div class="productoinicio">
+                    <img src="img/consolas/Atari VCS.jpg" alt="Atari VCS">
+                    <h3>Atari VCS</h3>
+                    <p>Precio: $2,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch Lite.png" alt="Nintendo Switch Lite">
+                    <h3>Nintendo Switch Lite</h3>
+                    <p>Precio: $2,300.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/Nintendo Switch OLED.jpg" alt="Nintendo Switch OLED">
+                    <h3>Nintendo Switch OLED</h3>
+                    <p>Precio: $1,500.000 COP</p>
+                </div>
+                <div class="productoinicio">
+                    <img src="img/consolas/PlayStation 4 Pro.png" alt="PlayStation 4 Pro">
+                    <h3>PlayStation 4 Pro</h3>
+                    <p>Precio: $1,200.000 COP</p>
+                </div>
+            </div>
+            <button onclick="cargarCategoria('Diademas')">Ver más</button>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Wow Games Colombia. Todos los derechos reservados.</p>
+
+</footer>
+
+</html>
