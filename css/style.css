@@ -6,9 +6,6 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-    }
-
-    body {
         flex-grow: 1;
         font-family: 'Arial', sans-serif;
         background-color: #f3f3f3;
@@ -17,18 +14,18 @@
     header {
         background-color: #1e2125;
         color: white;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
     }
 
     nav {
         background-color: #4a90e2;
-        padding: 10px;
+        padding: 7px;
         text-align: center;
     }
 
     nav input[type="text"] {
-        width: 300px;
+        width: 30%;
         padding: 10px;
         border-radius: 5px;
         border: none;
@@ -44,24 +41,10 @@
         cursor: pointer;
     }
 
-    nav button:hover {
-        background-color: #e0482a;
-    }
-
-    .categoria {
-        margin: 10px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
-        padding: 10px;
-        text-align: center;
-    }
-
     .categorias {
         display: flex;
         justify-content: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .categorias button {
@@ -74,27 +57,31 @@
         border-radius: 5px;
     }
 
-    .categorias button:hover {
-        background-color: #555;
+    .carousel img {
+        max-height: 300px;
+        /* Ajusta la altura máxima de las imágenes del carrusel */
+        width: 50%;
+        /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+        object-fit: cover;
+        /* Mantiene la proporción de las imágenes */
     }
-    /*En inicio, tres categorias por fila*/
-    /*#productos {
-       /* display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas para las categorías 
-        gap: 20px;*/
-        /* Espacio entre las categorías 
-        padding: 20px;
-    }*/
 
     .productos {
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        /*Que los productos se alineen a la izquierda*/
+        justify-content: flex-start;/*Que los productos se alineen a la izquierda*/
     }
 
+    .categoria {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+    }
     .producto {
         background-color: white;
         border-radius: 20px;
@@ -187,29 +174,17 @@
         margin-top: auto;
     }
 
-    /*
-.carousel-container {
-        margin:0 20px; Espacio a los lados del carrusel
-    }
-*/
-    .carousel img {
-        max-height: 300px;
-        /* Ajusta la altura máxima de las imágenes del carrusel */
-        width: 50%;
-        /* Asegura que las imágenes ocupen el ancho completo del contenedor */
-        object-fit: cover;
-        /* Mantiene la proporción de las imágenes */
+    /* Responsivo para pantallas más pequeñas */
+    @media (max-width: 768px) {
+        #productos {
+            grid-template-columns: repeat(2, 1fr);
+            /* Dos columnas en pantallas medianas */
+        }
     }
 
-/* Responsivo para pantallas más pequeñas */
-@media (max-width: 768px) {
-    #productos {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    @media (max-width: 576px) {
+        #productos {
+            grid-template-columns: 1fr;
+            /* Una columna en pantallas pequeñas */
+        }
     }
-}
-
-@media (max-width: 576px) {
-    #productos {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
-}

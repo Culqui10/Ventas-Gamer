@@ -12,14 +12,14 @@ function cargarCategoria(categoria) {
     const ruta = `categorias/${categoria}.html`;
 
     console.log("Ruta:", ruta); // Para verificar la ruta
-    fetch(ruta)
-        .then(response => {
+    fetch(ruta) //solicitud para obtener el contenido HTML
+        .then(response => { //no es correcta
             if (!response.ok) {
                 throw new Error("Error al cargar el archivo: " + response.statusText);
             }
             return response.text();
         })
-        .then(data => {
+        .then(data => { //es correcta, se inserta en div de productos
             productosDiv.innerHTML = data;
         })
         .catch(error => {
